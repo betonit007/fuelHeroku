@@ -1,12 +1,12 @@
 {
-  "name": "nodeuploads",
+  "name": "Fuel4Thought",
   "version": "1.0.0",
-  "description": "Example for image uploading in node",
+  "description": "fuel tracker",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "author": "",
+  "author": "Tim N",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
