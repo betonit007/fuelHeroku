@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const multer = require('multer');
 var db = require("./models");
-var PORT = process.env.PORT || 7500;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -87,7 +86,7 @@ require('./routes/readings-api-routes.js')(app);
 
 
 db.sequelize.sync({ force: true }).then(function() {
-  app.listen(PORT, function() {
+  app.listen(process.env.PORT || 3000, function() {
     console.log("App listening on PORT " + PORT);
   });
 });
